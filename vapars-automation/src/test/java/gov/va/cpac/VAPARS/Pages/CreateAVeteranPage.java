@@ -47,6 +47,5 @@ public class CreateAVeteranPage extends BasePage {
 	
 	@FindBy(xpath = "/html/body/div[1]/div[1]/div/div[2]/div[1]/div/div/div/div/div/div[2]/div/div[2]/div/form/div[9]/button")
 	public WebElement buttonCloseAddress;
-
 	
 }

@@ -8,7 +8,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>gov.va.him</groupId>
@@ -16,7 +15,6 @@
 			<version>1.9.14</version>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -39,7 +37,7 @@
 						<!-- Work around. Surefire does not include enough information to disambiguate between different examples and scenarios. -->
 						<configurationParameters>
                             cucumber.junit-platform.naming-strategy=long
-</configurationParameters>
+						</configurationParameters>
 					</properties>
 				</configuration>
 			</plugin>
