@@ -1,46 +1,25 @@
 package gov.va.cpac.VAPARS.Pages;
 
-import java.time.Duration;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import gov.va.him.webapp.BasePage;
 
-public class SearchForAVeteranPage {
-	WebDriver driver;
+public class SearchForAVeteranPage extends BasePage {
 
-	public SearchForAVeteranPage(WebDriver driver) {
-		this.driver = driver;
-	}
+	@FindBy(xpath = "/html/body/div[1]/div[1]/div/nav/div[3]/ul/li[4]/a")
+	public WebElement tabVeteran;
 	
-	By tabVeteran = By.xpath("/html/body/div[1]/div[1]/div/nav/div[3]/ul/li[4]/a");
-	public void clickTabVeteran() {
-		driver.findElement(tabVeteran).click();
-	}
+	@FindBy(xpath = "//*[@id='SSNSearchModel_SearchText']")
+	public WebElement VetLookup;
 	
-	By VetLookup = By.xpath("//*[@id='SSNSearchModel_SearchText']");
-	public void lookupVeteran(String string) {
-		driver.findElement(VetLookup).sendKeys(string);
-	}
+	@FindBy(id = "ssnSearchSubmitButton")
+	public WebElement VetSSNsearch;
 	
-	By VetSSNsearch = By.id("ssnSearchSubmitButton");
-	public void SSNsearchVet() {
-		driver.findElement(VetSSNsearch).click();
-	}
+	@FindBy(xpath = "/html/body/div[1]/div[1]/div/div[2]/div[4]/div/div/div/div/div/div[2]/table/tbody/tr/td[3]/a")
+	public WebElement VetSelect;
 	
-	By VetSelect = By.xpath("/html/body/div[1]/div[1]/div/div[2]/div[4]/div/div/div/div/div/div[2]/table/tbody/tr/td[3]/a");
-	public void SelectVetSSNsearch () {
-     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-    	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div[1]/div/div[2]/div[4]/div/div/div/div/div/div[2]/table/tbody/tr/td[3]/a")));
-		driver.findElement(VetSelect).click();
-	}
-	
-	By VetSelectClose = By.xpath("/html/body/div[1]/div[1]/div/div[2]/div[4]/div/div/div/div/div/div[3]/button");
-	public void CloseVetSSNsearch () {
-     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-    	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div[1]/div/div[2]/div[4]/div/div/div/div/div/div[3]/button")));
-		driver.findElement(VetSelectClose).click();
-	}
+	@FindBy(xpath = "/html/body/div[1]/div[1]/div/div[2]/div[4]/div/div/div/div/div/div[3]/button")
+	public WebElement VetSelectClose; 
 	
 }

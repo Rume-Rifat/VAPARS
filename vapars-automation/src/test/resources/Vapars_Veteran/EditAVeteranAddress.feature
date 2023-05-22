@@ -3,20 +3,20 @@
 Feature: Veterans
 
   Scenario Outline: Edit a Veteran Address
-    Given User0 was singed in then navigate to Dashboard "<URL>"
-    And User0 will Navigate to Veteran page by clicking the Veteran tab
-    When User0 will Enter the desired Veterans SSN "<SSN>"
-    And User0 will Click lookup the Search button
-    Then User0 will Click the Veteran Select button
-    And User0 will Click Close button
-    Then User0 Clicks Address History
-    Then User0 Clicks Edit
-    Then User0 will Add address "<Address>"
-    And User0 will Add postal code "<PostalCode>"
-    And User0 will Click Search
-    Then User0 will Select the City and State
-    And User0 will Click Save
-    Then User0 will Click Close
+    Given the user is singed in and navigate to Dashboard
+    And the user clicks Navigate to Veteran page by clicking the Veteran tab
+    When the user types Enter the desired Veterans SSN "<SSN>"
+    And the user click lookup the Search button
+    Then the user click the Veteran Select button
+    And the user click Close button
+    Then the user clicks Address History
+    Then the user clicks Edit
+    Then the user types Add address "<Address>"
+    And the user types Add postal code "<PostalCode>"
+    And the user click Search
+    Then the user clicks Select the City and State
+    And the user clicks Save
+    Then the user clicks Close
 
     Examples: 
       | URL                              | SSN       | Address     | PostalCode |
