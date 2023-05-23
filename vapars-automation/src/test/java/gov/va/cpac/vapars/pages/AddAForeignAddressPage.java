@@ -1,12 +1,9 @@
-package gov.va.cpac.VAPARS.Pages;
+package gov.va.cpac.vapars.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AddAForeignAddressPage {
-
-	@FindBy(id = "newAddressButton")
-	public WebElement buttonNewAddress; 
 	
 	@FindBy(xpath = "//*[@id='patientAddressFormDiv']/div[1]/button[2]")
 	public WebElement buttonForeignAddress;

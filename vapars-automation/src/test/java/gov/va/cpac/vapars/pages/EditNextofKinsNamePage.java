@@ -1,4 +1,4 @@
-package gov.va.cpac.VAPARS.Pages;
+package gov.va.cpac.vapars.pages;
 
 public class EditNextofKinsNamePage {
 

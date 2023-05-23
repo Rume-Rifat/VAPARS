@@ -1,4 +1,4 @@
-package gov.va.cpac.VAPARS.Pages;
+package gov.va.cpac.vapars.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
