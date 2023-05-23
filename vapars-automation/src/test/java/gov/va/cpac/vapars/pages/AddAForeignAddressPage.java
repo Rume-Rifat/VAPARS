@@ -9,16 +9,16 @@ public class AddAForeignAddressPage {
 	public WebElement buttonNewAddress; 
 	
 	@FindBy(xpath = "//*[@id='patientAddressFormDiv']/div[1]/button[2]")
-	public WebElement buttonforeignAddress;
+	public WebElement buttonForeignAddress;
 	
 	@FindBy(xpath = "//*[@id='PatientAddressDataModel_AddressOne']")
-	public WebElement fieldforeignAddress;
+	public WebElement fieldForeignAddress;
 	
 	@FindBy(xpath = "//*[@id='PatientAddressDataModel_City']")	
-	public WebElement fieldforeignCity;
+	public WebElement fieldForeignCity;
 			
 	@FindBy(xpath = "//*[@id='PatientAddressDataModel_State']")	
-	public WebElement fieldforeignState; 
+	public WebElement fieldForeignState; 
 	
 	@FindBy(xpath = "//*[@id='PatientAddressDataModel_PostalCode']")
 	public WebElement selectPostalCode;

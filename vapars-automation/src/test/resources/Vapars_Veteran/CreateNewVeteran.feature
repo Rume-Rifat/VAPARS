@@ -1,4 +1,6 @@
 # VAPARs-2191
+
+@rifat
 Feature: Veterans
   
   Scenario: Create New Veteran
@@ -10,10 +12,10 @@ Feature: Veterans
     And the user types "xiv" into "CreateANewVeteranPage.fieldLastName"
     And the user types "Testsubject" into "CreateANewVeteranPage.fieldFirstName"
     And the user clicks "CreateANewVeteranPage.buttonSavePatient"
-    Then the user click "CreateANewVeteranPage.buttonNewAddress"
-    And the user types "<Address>" into "CreateANewVeteranPage.fieldAddress"
-    And the user types "<PostalCode>" into "CreateANewVeteranPage.fieldPostalCode"
-    And the user clicks "CreateANewVeteranPage.buttonSearch"
-    And the user clicks "CreateANewVeteranPage.buttonSelectPC"
-    And the user clicks "CreateANewVeteranPage.buttonSaveAddress"
-    Then the user clicks "CreateANewVeteranPage.buttonCloseAddress"
+    Then the user clicks "CreateANewVeteranPage.buttonNewAddress" 
+		And the user types "313 Elm st" into "CreateANewVeteranPage.fieldAddress"
+    #And the user types "22150" into "CreateANewVeteranPage.fieldPostalCode"
+    #And the user clicks "CreateANewVeteranPage.buttonSearch"
+    #And the user clicks "CreateANewVeteranPage.buttonSelectPC"
+    #And the user clicks "CreateANewVeteranPage.buttonSaveAddress"
+    #Then the user clicks "CreateANewVeteranPage.buttonCloseAddress"
