@@ -1,5 +1,4 @@
 # VAPARs-2206
-
 Feature: Veterans
 
   Scenario: Add a Foreign Address for a Veteran
@@ -17,4 +16,3 @@ Feature: Veterans
     And the user selects index "19" from dropdown "AddAForeignAddressPage.selectCountry"
     Then the user clicks "AddAForeignAddressPage.saveForeignAddress"
     And the user clicks "AddAForeignAddressPage.closeForeignAddress"
-

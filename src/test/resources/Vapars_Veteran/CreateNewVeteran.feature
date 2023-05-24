@@ -1,8 +1,7 @@
 # VAPARs-2191
-
 @rifat
 Feature: Veterans
-  
+
   Scenario: Create New Veteran
     Given the user is singed in and navigate to Dashboard
     Then the user clicks "CreateANewVeteranPage.tabVeteran"
@@ -13,9 +12,9 @@ Feature: Veterans
     And the user types "xiv" into "CreateANewVeteranPage.fieldLastName"
     And the user types "Testsubject" into "CreateANewVeteranPage.fieldFirstName"
     And the user clicks "CreateANewVeteranPage.buttonSavePatient"
-    Then the user clicks "CreateANewVeteranPage.buttonNewAddress" 
-		And the user types "313 Elm st" into "CreateANewVeteranPage.fieldAddress"
-		And the user type"22150" into "CreateANewVeteranPage.fieldPostalCode"
+    Then the user clicks "CreateANewVeteranPage.buttonNewAddress"
+    And the user types "313 Elm st" into "CreateANewVeteranPage.fieldAddress"
+    And the user type"22150" into "CreateANewVeteranPage.fieldPostalCode"
     And the user clicks "CreateANewVeteranPage.buttonSearch"
     And the user clicks "CreateANewVeteranPage.buttonSelectPC"
     And the user clicks "CreateANewVeteranPage.buttonSaveAddress"

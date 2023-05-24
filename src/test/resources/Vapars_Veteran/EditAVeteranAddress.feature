@@ -1,5 +1,4 @@
 # VAPARs-2209
-
 Feature: Veterans
 
   Scenario: Edit a Veteran Address
@@ -21,8 +20,3 @@ Feature: Veterans
     Then the user clicks "EditAVeteranAddressPage.buttonSaveAddress"
     And the user clicks "EditAVeteranAddressPage.buttonCloseAddress"
     And the user clicks "EditAVeteranAddressPage.buttonCloseEditAddress"
-    
-
-
-
-
