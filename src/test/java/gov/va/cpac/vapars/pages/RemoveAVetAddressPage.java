@@ -7,6 +7,4 @@ public class RemoveAVetAddressPage {
 	
 		@FindBy(xpath = "//*[@id='addressHistoryDiv']/div[2]/div/table/tbody/tr[1]/td[5]/a")
 		public WebElement buttonRemoveVetAddress;
-		
-
 }

@@ -7,5 +7,4 @@ public class EditAVetForeignAddressPage {
 	
 	@FindBy(xpath = "//*[@id='addressHistoryDiv']/div[2]/div/table/tbody/tr[1]/td[3]/button")
 	public WebElement buttonEditForeignAddress;
-
 }

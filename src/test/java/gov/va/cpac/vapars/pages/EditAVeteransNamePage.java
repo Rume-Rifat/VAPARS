@@ -18,5 +18,4 @@ public class EditAVeteransNamePage extends BasePage {
 	
 	@FindBy(xpath = "//*[@id='savePatientButton']")
 	public WebElement buttonCloseAddress; 
-	
 }

@@ -6,13 +6,13 @@ import gov.va.him.webapp.BasePage;
 
 public class CreateAVeteranPage extends BasePage {
 	
-	@FindBy(xpath = "/html/body/div[1]/div[1]/div/nav/div[3]/ul/li[4]/a")
+	@FindBy(xpath = "//*[@id='navbarSupportedContent']/ul/li[4]/a")
 	public WebElement tabVeteran;
 	
 	@FindBy(xpath = "//div[@id='main-wrapper']/div[8]/div/div/div[1]/button")
 	public WebElement buttonNewVeteran;
 	
-	@FindBy(xpath = "/html/body/div[1]/div[1]/div/div[2]/div[8]/div/div/div[3]/div/div[1]/div/form/div[3]/div/div[1]/input")
+	@FindBy(id = "PatientDataModel_SSN")
 	public WebElement fieldSSN;
 	
 	@FindBy(id = "PatientDataModel_IntegrationControlNumber")
@@ -24,7 +24,7 @@ public class CreateAVeteranPage extends BasePage {
 	@FindBy(id = "PatientDataModel_FirstName")
 	public WebElement fieldFirstName;
 
-	@FindBy(xpath = "//*[@id='savePatientButton']")
+	@FindBy(id = "savePatientButton")
 	public WebElement buttonSavePatient;
 
 	@FindBy(id = "newAddressButton")
@@ -37,7 +37,7 @@ public class CreateAVeteranPage extends BasePage {
 	public WebElement fieldPostalCode;
 
 	@FindBy(xpath = "//*[@id='patientAddressForm']/div[4]/div/div/div/button")
-	public WebElement buttonSearch;
+	public WebElement buttonSearchPC;
 	
 	@FindBy(xpath = "/html/body/div[1]/div[1]/div/div[2]/div[1]/div/div/div/div/div/div[2]/div/div[2]/div/form/div[5]/div/div/table/tbody/tr/td[3]/button")
 	public WebElement buttonSelectPC;
@@ -45,7 +45,6 @@ public class CreateAVeteranPage extends BasePage {
 	@FindBy(id = "patientAddressSubmitButton")
 	public WebElement buttonSaveAddress;
 	
-	@FindBy(xpath = "/html/body/div[1]/div[1]/div/div[2]/div[1]/div/div/div/div/div/div[2]/div/div[2]/div/form/div[9]/button")
+	@FindBy(xpath = "//*[@id='patientAddressForm']/div[8]/button[2]")
 	public WebElement buttonCloseAddress;
-	
 }

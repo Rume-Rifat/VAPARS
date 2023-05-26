@@ -33,6 +33,4 @@ public class EditAVeteranAddressPage extends BasePage {
 	
 	@FindBy(xpath = "//*[@id='patientAddressForm']/div[9]/button")
 	public WebElement buttonCloseEditAddress;
-
 }
-

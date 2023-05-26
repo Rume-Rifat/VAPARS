@@ -10,5 +10,4 @@ public class ChangePrimaryAddressForVeteranPage {
 	
 	@FindBy(xpath = "//*[@id='addressHistoryDiv']/div[2]/div/table/tbody/tr/td[2]/button")
 	public WebElement buttonVetPrimaryAddress;
-
 }

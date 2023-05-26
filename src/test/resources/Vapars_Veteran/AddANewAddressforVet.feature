@@ -2,13 +2,13 @@
 Feature: Veterans
 
   Scenario Outline: Add a New Address for a Veteran
-    Given the user is singed in and navigate to Dashboard
+    Given the user is signed in and navigate to Dashboard
     And the user clicks "SearchForAVeteranPage.tabVeteran"
     And the title name should be "VAPARS - Veteran Details"
-    And the user types "123123449" into "SearchForAVeteranPage.VetLookup"
-    And the user clicks "SearchForAVeteranPage.VetSSNsearch"
-    And the user clicks "SearchForAVeteranPage.VetSelect"
-    And the user clicks "SearchForAVeteranPage.VetSelectClose"
+    And the user types "123123449" into "SearchForAVeteranPage.fieldVetLookup"
+    And the user clicks "SearchForAVeteranPage.buttonVetSSNsearch"
+    And the user clicks "SearchForAVeteranPage.buttonVetSelect"
+    And the user clicks "SearchForAVeteranPage.buttonVetSelectClose"
     And the user clicks "CreateANewVeteranPage.buttonNewAddress"
     And the user types "313 Elm st" into "CreateANewVeteranPage.fieldAddress"
     And the user types "22150" into "CreateANewVeteranPage.fieldPostalCode"

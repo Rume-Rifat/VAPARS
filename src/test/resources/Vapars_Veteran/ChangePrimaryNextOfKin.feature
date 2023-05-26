@@ -1,7 +1,7 @@
-# VAPARs-2207
+# VAPARs-2218
 Feature: Veterans
 
-  Scenario: Search for Veteran
+  Scenario: Change the Primary Next of Kin
     Given the user is signed in and navigate to Dashboard
     And the user clicks "SearchForAVeteranPage.tabVeteran"
     And the title name should be "VAPARS - Veteran Details"
@@ -9,3 +9,5 @@ Feature: Veterans
     And the user clicks "SearchForAVeteranPage.buttonVetSSNsearch"
     And the user clicks "SearchForAVeteranPage.buttonVetSelect"
     And the user clicks "SearchForAVeteranPage.buttonVetSelectClose"
+    Then the user clicks "AddNextOfKinPage.tabNextKin"
+    And the user clicks "ChangePrimaryNextOfKinPage.tabPrimaryKin"

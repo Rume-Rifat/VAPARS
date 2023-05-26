@@ -16,5 +16,4 @@ public class AddCommentForVeteranPage {
 	
 	@FindBy(xpath = "//*[@id='newPatientLog']/div[2]/button[2]")
 	public WebElement buttonCloseComments;
-
 }

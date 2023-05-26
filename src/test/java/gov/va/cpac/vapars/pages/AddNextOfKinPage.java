@@ -3,7 +3,7 @@ package gov.va.cpac.vapars.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AddNextofKinPage {
+public class AddNextOfKinPage {
 	
 	@FindBy(id = "nextOfKin-tab")
 	public WebElement tabNextKin;
@@ -34,5 +34,4 @@ public class AddNextofKinPage {
 	
 	@FindBy(id = "closeNokButton")
 	public WebElement buttonCloseKin;
-
 }
