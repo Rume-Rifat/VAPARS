@@ -1,8 +1,8 @@
 # VAPARs-2221
 Feature: Veterans
 
-  Scenario: Add a comment for a Veteran
-    Given the user is signed in and navigate to Dashboard
+  Scenario: Add comment for Veteran
+    Given the user is signed in and navigates to Dashboard
     And the user clicks "SearchForAVeteranPage.tabVeteran"
     And the title name should be "VAPARS - Veteran Details"
     And the user types "123123449" into "SearchForAVeteranPage.fieldVetLookup"

@@ -2,7 +2,7 @@
 Feature: Veterans
 
   Scenario: Create New Veteran
-    Given the user is signed in and navigate to Dashboard
+    Given the user is signed in and navigates to Dashboard
     Then the user clicks "CreateANewVeteranPage.tabVeteran"
     And the title name should be "VAPARS - Veteran Details"
     When the user clicks "CreateANewVeteranPage.buttonNewVeteran"

@@ -12,8 +12,8 @@ public class GeneralSteps extends BrowserUtil {
 
 	final static Logger log = LogManager.getLogger(GeneralSteps.class);
 
-	@Given("the user is signed in and navigate to Dashboard")
-	public void the_user_is_signed_in_and_navigate_to_Dashboard() {
+	@Given("the user is signed in and navigates to Dashboard")
+	public void the_user_is_signed_in_and_navigates_to_Dashboard() {
 		getDriver().get(ConfigPropReader.getProperty("baseURL"));
 	}
 	@Then("the title name should be {string}")

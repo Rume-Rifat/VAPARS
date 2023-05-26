@@ -1,8 +1,8 @@
 # VAPARs-2218
 Feature: Veterans
 
-  Scenario: Change the Primary Next of Kin
-    Given the user is signed in and navigate to Dashboard
+  Scenario: Change Primary Next of Kin
+    Given the user is signed in and navigates to Dashboard
     And the user clicks "SearchForAVeteranPage.tabVeteran"
     And the title name should be "VAPARS - Veteran Details"
     And the user types "123123449" into "SearchForAVeteranPage.fieldVetLookup"
