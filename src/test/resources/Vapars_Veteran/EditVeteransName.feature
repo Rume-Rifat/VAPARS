@@ -15,7 +15,6 @@ Feature: Veterans
     And the user clears "EditAVeteransNamePage.editFieldFirstName"
     And the user types "Checking" into "EditAVeteransNamePage.editFieldFirstName"
     Then the user clicks "EditAVeteransNamePage.buttonCloseAddress"
-
   # Reverting Test Data
   Scenario: Reverting Edit of a Veteran Name
     Given the user is signed in and navigates to Dashboard

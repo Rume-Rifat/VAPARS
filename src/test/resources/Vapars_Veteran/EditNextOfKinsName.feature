@@ -18,7 +18,6 @@ Feature: Veterans
     Then the user clicks "EditAVeteranAddressPage.buttonSaveAddress"
     And the user clicks "EditAVeteranAddressPage.buttonCloseAddress"
     And the user clicks "EditAVeteranAddressPage.buttonCloseEditAddress"
-
   #Reverting Test Data
   Scenario: Reverting Edit of Next of Kins Name
     Given the user is signed in and navigates to Dashboard

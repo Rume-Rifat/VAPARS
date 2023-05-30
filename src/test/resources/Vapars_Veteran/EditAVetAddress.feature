@@ -15,12 +15,11 @@ Feature: Veterans
     And the user types "5515 Center Ct" into "EditAVeteranAddressPage.editFieldAddress"
     And the user clears "EditAVeteranAddressPage.fieldPostalCode"
     And the user types "22201" into "EditAVeteranAddressPage.fieldPostalCode"
-    And the user click "EditAVeteranAddressPage.buttonSearch"
+    And the user clicks "EditAVeteranAddressPage.buttonSearch"
     And the user clicks "EditAVeteranAddressPage.buttonEditPC"
     Then the user clicks "EditAVeteranAddressPage.buttonSaveAddress"
     And the user clicks "EditAVeteranAddressPage.buttonCloseAddress"
     And the user clicks "EditAVeteranAddressPage.buttonCloseEditAddress"
-
   #Reverting Test
   Scenario: Reverting Edit of a Veteran Address
     Given the user is signed in and navigates to Dashboard
@@ -36,7 +35,7 @@ Feature: Veterans
     And the user types "313 Elm st" into "EditAVeteranAddressPage.editFieldAddress"
     And the user clears "EditAVeteranAddressPage.fieldPostalCode"
     And the user types "22150" into "EditAVeteranAddressPage.fieldPostalCode"
-    And the user click "EditAVeteranAddressPage.buttonSearch"
+    And the user clicks "EditAVeteranAddressPage.buttonSearch"
     And the user clicks "EditAVeteranAddressPage.buttonEditPC"
     Then the user clicks "EditAVeteranAddressPage.buttonSaveAddress"
     And the user clicks "EditAVeteranAddressPage.buttonCloseAddress"

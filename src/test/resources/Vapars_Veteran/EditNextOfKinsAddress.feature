@@ -19,7 +19,6 @@ Feature: Veterans
     And the user clicks "AddNextofKinPage.buttonKinPCSelect"
     And the user clicks "AddNextofKinPage.buttonSaveKin"
     And the user clicks "AddNextofKinPage.buttonCloseKin"
-
   # Reverting Test Data
   Scenario: Reverting Edit of Next of Kins Address
     Given the user is signed in and navigates to Dashboard

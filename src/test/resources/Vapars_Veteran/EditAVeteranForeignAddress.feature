@@ -21,8 +21,7 @@ Feature: Veterans
     And the user selects index "17" from dropdown "AddAForeignAddressPage.selectCountry"
     Then the user clicks "AddAForeignAddressPage.saveForeignAddress"
     And the user clicks "AddAForeignAddressPage.closeForeignAddress"
-
-  # Reverting Veteran foriegn address 
+  # Reverting Veteran foriegn address
   Scenario: Reverting Edit of a Veterans foreign address
     Given the user is signed in and navigates to Dashboard
     And the user clicks "SearchForAVeteranPage.tabVeteran"
